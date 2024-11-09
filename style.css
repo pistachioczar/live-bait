@@ -47,14 +47,6 @@ nav li{
     border-radius: 5px;
 }
 
-/* nav li:hover{  
-    margin-right: 10px;
-    padding:15px;
-
-    border-radius: 5px;
-    scale:1.05;
-} */
-
 nav li a{
     text-decoration: none;
     color:white;
@@ -127,30 +119,35 @@ nav li a{
 footer a{
     color: black;
     font-size: 30px;
+    margin-left: 10px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .header-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        text-align: center;
     }
 
     .title{
         font-size: 50px;
     }
-    
-    .opening-image{
-        align-items: start;
-    }
-
-    .about-us{
-        margin-left: 5%;
-    }
 
     .index-bottom{
         flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .opening-image{
         align-items: center;
     }
 }
