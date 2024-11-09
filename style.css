@@ -1,4 +1,156 @@
-body{
-    background-image: url("media/background.jpg");
+html,body{
+    margin:0;
+    padding:0;
+    background-color: #ede9e9;
+    font-family: 'EB Garamond';font-size: 22px;
 }
 
+/* header styling */
+
+header{
+    background-color: #4e4e4e;
+    padding:0;
+    margin:0;
+    color: #cbcbcb;
+    font-family: 'EB Garamond';font-size: 22px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    margin:0px;
+    font-size: 60px;
+}
+
+nav{
+    margin-right: 10%;
+}
+
+nav ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{  
+    margin: 5px 10px;
+    font-size: 35px;
+    padding:10px;
+    background-color: black;
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+/* nav li:hover{  
+    margin-right: 10px;
+    padding:15px;
+
+    border-radius: 5px;
+    scale:1.05;
+} */
+
+nav li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bolder;
+}
+
+/* homepage opening */
+
+.opening-image{
+    background-image: url("media/background.jpg");
+    background-size:100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.about-us{
+    max-width: 320px;
+    text-align:center;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-right: 7%;
+
+}
+
+.about-us h1{
+    font-size: 40px;
+    margin:0;
+}
+
+.about-us-text{
+    background-color: #aaaaaa;
+    opacity: 80%;
+    padding: 5px 10px;
+}
+
+.about-us-text h1, .about-us-text p{
+    opacity:100%
+}
+
+/* homepage bottom */
+.index-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.schedule{
+    text-align: center;
+    margin-right:10%;
+    margin-left:5%;
+}
+
+.schedule h1{
+    font-size: 50px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.video{
+    margin-top:40px;
+}
+
+
+/* footer styling */
+footer a{
+    color: black;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px){
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+    
+    .opening-image{
+        align-items: start;
+    }
+
+    .about-us{
+        margin-left: 5%;
+    }
+
+    .index-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+}
