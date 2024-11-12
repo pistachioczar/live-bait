@@ -1,7 +1,7 @@
 html,body{
     margin:0;
     padding:0;
-    background-color: #ede9e9;
+    background-color: #d6d6d6;
     font-family: 'EB Garamond';font-size: 22px;
 }
 
@@ -53,6 +53,8 @@ nav li a{
     font-weight: bolder;
 }
 
+
+/*Homepage*/
 /* homepage opening */
 
 .opening-image{
@@ -71,7 +73,7 @@ nav li a{
     padding-bottom: 20px;
     padding-top: 40px;
     padding-right: 7%;
-
+    opacity: 80%;
 }
 
 .about-us h1{
@@ -81,7 +83,6 @@ nav li a{
 
 .about-us-text{
     background-color: #aaaaaa;
-    opacity: 80%;
     padding: 5px 10px;
 }
 
@@ -92,16 +93,15 @@ nav li a{
 /* homepage bottom */
 .index-bottom{
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: row;
     padding: 50px;
 }
 
 .schedule{
     text-align: center;
-    margin-right:10%;
-    margin-left:5%;
+    text-wrap: wrap;
 }
 
 .schedule h1{
@@ -110,8 +110,12 @@ nav li a{
     text-decoration: underline;
 }
 
-.video{
-    margin-top:40px;
+iframe{
+    padding:0;
+    box-shadow: 12px 12px 12px rgba(0,0,0 ,0.2),
+    -10px -10px 10px white;
+    border: solid black;
+    border-radius: 10px;
 }
 
 
@@ -122,7 +126,56 @@ footer a{
     margin-left: 10px;
 }
 
-@media screen and (max-width: 1000px){
+/*Pricing page*/
+#store-body{
+    background-image: url("media/store-background.jpg");
+    background-size:100%;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+/*Shop Container*/
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.shop-box{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #737373;
+    margin: 20px;
+    border: solid #f3f3f3 7px;
+    border-radius: 2px;
+    opacity: 95%;
+}
+
+.shop-box img{
+    width: 55%;
+    min-width: 250px;
+    margin: 10px;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+
+.shop-text{
+    min-width: 170px;
+}
+
+footer{
+    background-color: #d6d6d6;
+}
+
+
+@media screen and (max-width: 999px){
     .header-container{
         display: flex;
         justify-content: space-between;
@@ -138,6 +191,14 @@ footer a{
     .index-bottom{
         flex-direction: column;
         align-items: center;
+    }
+
+    .shop-box img{
+        width: 80%;
+    }
+
+    .shop-text{
+        text-align: center;
     }
 }
 
